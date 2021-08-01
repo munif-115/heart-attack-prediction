@@ -1,0 +1,24 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> Heart Attcak prediction </h1><br>
+        
+        <form method="POST", action="{{url_for('predict')}}">
+           <b> Age :  <input type="text", name='age', placeholder="enter age"> <br><br>
+            anaemia :  <input type="text", name='anaemia', placeholder="press 1 or 0"> <br><br>
+            diabetes :  <input type="text", name='diabetes', placeholder="press 1 or 0"> <br><br>
+            high_blood_pressure:  <input type="text", name='high_blood_pressure', placeholder="press 1 or 0"> <br><br>
+            serum_creatinine :  <input type="text", name='serum_creatinine', placeholder="enter creatinine level"> <br><br>
+            sex:  <input type="text", name='sex', placeholder="1 for male 0 for female"> <br><br>
+            smoking : <input type="text", name='smoking', placeholder="press 1 or 0"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        
+        <br><br><h3>{{ prediction_text }}<h3></h3>
+    </center>
+
+    </body>
+</html>
